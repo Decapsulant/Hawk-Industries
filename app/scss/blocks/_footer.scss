@@ -15,7 +15,13 @@
 
     color: #202020;
 
-    opacity: 0.06;
+    opacity: 0.16;
+}
+
+@media(max-width:768px){
+    .footer__title{
+        display: none;
+}
 }
 .footer__inner {
     display: flex;
@@ -156,6 +162,8 @@
     .footer__nav-item{
         gap: 20px;
     }
+
+    
 
 
 
