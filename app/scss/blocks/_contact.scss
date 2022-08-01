@@ -1,0 +1,217 @@
+.contact {
+    background-color: #F2F2F2;
+    position: relative;
+    z-index: 1;
+}
+.contact__title {
+position: absolute;
+padding-top: 33px;
+top: 5%;
+left: 7%;
+z-index: -1;
+
+user-select: none;
+
+color: #4D4D4D;
+opacity: 0.06;
+font-weight: 700;
+font-size: 200px;
+line-height: 128%;
+}
+.contact__inner {
+    display: flex;
+    justify-content: space-between;
+    padding: 188px 0 208px 0;
+}
+.contact__message {
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 128%;
+}
+.contact__title-form {
+    background: linear-gradient(90.31deg, #404040 0%, #1C1C1C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 37px;
+}
+.form__message {
+    background: linear-gradient(217.2deg, #404040 1.39%, #1F1F1F 99.08%);
+    box-shadow: 0px 8px 16px rgba(45, 45, 45, 0.3);
+    border-radius: 8px;
+    padding:70px;
+    max-width: 648px;
+}
+.form__message-inputtitle {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: -12px;
+    color: #F2F2F2;
+}
+.form__message-input {
+    width: 343px;
+    font-size: 14px;
+    height: 38px;
+    border-radius: 4px;
+    border: none;
+}
+.form__message-textareatitle {
+    padding-top: 25px;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 1;
+    color: #F2F2F2;
+    margin-bottom: 7px;
+}
+.form__message-textarea {
+    width: 508px;
+    line-height: 1.1;
+    font-size: 14px;
+    resize: none;
+    height: 243px;  
+    border-radius: 4px;  
+    border: none;
+}
+.form__message-btn {
+    margin-top: 48px;
+    color: #2B2B2B;
+    font-weight: 700;
+    font-size: 21.7px;
+    padding: 15px 41px 11px 41px;
+    min-width: 243px;
+    line-height: 1;
+    cursor: pointer;
+    border-radius: 4px;  
+    border: none;
+    transition: all .2s linear;
+
+    &:hover{
+        opacity: 0.5;
+    }
+
+}
+.info__title {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 1;
+    background: linear-gradient(90.31deg, #404040 0%, #1C1C1C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+    margin-bottom: 41px;
+}
+.info__body {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 8px rgba(32, 32, 32, 0.15);
+    border-radius: 8px;
+    min-width: 450px;
+    margin-top: 70px;
+}
+.info__header {
+    background: #202020;
+    padding: 26px 34px 23px 34px;
+}
+.info__header-title {
+    font-weight: 700;
+    font-size: 28.9px;
+    color:#fff;
+}
+.info__contact {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 33px;
+}
+.info__contact-item {
+    text-decoration: none;
+    color: #202020;
+    display: flex;
+    align-items: center;
+    align-items: center;
+    transition: all .3s linear;
+
+    &:hover{
+        padding-bottom: 10px;
+        border-radius: 6px;  
+        border: none;
+        box-shadow: 0px 4px 8px rgba(32, 32, 32, 0.15);
+        min-height: 50px;
+    }
+}
+.info__contact-icon {
+    padding-right: 25px;
+}
+@media(max-width:1200px){
+    .contact__inner{
+        flex-wrap:wrap;
+        flex:100%;
+        justify-content: center;
+        gap: 100px;
+        text-align: center;
+        padding: 100px 0 70px 0;
+    }
+    .contact__title{
+        font-size: 72px;
+        top: 0;
+        left: 50%;
+    }
+    @media(max-width:670px){
+        .contact__message{
+            max-width: 500px;
+        }
+        .form__message-textarea{
+            width: 350px;
+            
+        }
+        .contact__title-form{
+            font-size: 32px;
+        }
+    }
+}
+@media(max-width:768px){
+    .contact__title{
+        font-size: 48px;
+        width: 100%;
+        top: 0;
+        left: 24%;
+    }
+}
+@media(max-width:500px){
+    .contact__message{
+        max-width: 350px;
+    }
+    .form__message-textarea{
+        width: 250px;
+        
+    }
+    .form__message-input{
+        width: 250px;
+    }
+    .form__message{
+        padding: 50px 15px;
+    }
+    .form__message-btn{
+        margin-top: 28px;
+    }
+
+    .info__body{
+        min-width: 250px;
+        margin-top: 40px;
+    }
+    .info__header-title{
+        font-size: 20px;
+    }
+    .info__title{
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+    .contact__title{
+        font-size: 48px;
+        width: 100%;
+        top: 0;
+        left: 10%;
+    }
+}

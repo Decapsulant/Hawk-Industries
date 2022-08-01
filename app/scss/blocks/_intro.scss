@@ -1,0 +1,97 @@
+.intro {
+    padding: 120px 0 0 0;
+    background: #F2F2F2 url('../../images/icon/group-1.png') right no-repeat;
+    overflow: hidden;
+}
+.intro__body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.intro__title {
+font-weight: 700;
+font-size: 90px;
+line-height: 112px;
+margin-bottom: 5px;
+background: linear-gradient(101.27deg, #544C4C 2.49%, #0A0A0A 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+}
+.intro__subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 128%;
+    max-width: 520px;
+    width: 100%;
+    color: #4D4C4C;
+    margin-bottom: 55px;
+}
+.intro__btn {
+    color: #383434;
+    background-color: #E4E2E2;
+    text-align: center;
+    font-weight: 700;
+    font-size: 21.7px;
+    line-height: 128%;
+    transition: all .5s linear;
+
+
+    &:hover{
+        background: linear-gradient(101.27deg, #544C4C 2.49%, #0A0A0A 100%);
+        color: #F2F2F2
+    }
+}
+.btn__contact {
+    padding:15px 52px 11px 52px;
+}
+.btn__products {
+    padding: 15px 40px 11px 40px;
+}
+.intro__images {
+    margin-bottom: -30px;
+    margin-left:100px ;
+    width: 411px;
+    height: 179px;
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width:1160px){
+    .intro__images{
+        display:none;
+    }
+    .intro{
+        padding:120px 0 100px 0;
+    }
+}
+
+@media (max-width:768px){
+    .intro__body{
+        display: block;
+        padding-top:100px ;
+    }
+    .intro__title{
+        font-size: 36px;
+        line-height: 1.4;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .intro__subtitle{
+        font-size: 16px;
+        max-width: 70%;
+        margin: 0 auto;
+        padding-bottom: 50px;
+        line-height: 1.4;
+        text-align: center;
+    }
+    .intro__btn{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 250px;
+        margin: 0 auto 20px;
+    }
+}
